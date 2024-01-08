@@ -28,27 +28,47 @@ To create a new user, click the "Create" button. A new window will appear, as fo
 <img src="data/pictures/4.png" width="540" height="315">
 </div>
 
-源码流程：
-主程序GUI.py中GUI_Log类为调用登录界面，其中用户及密码以excel形式保存在“./GUI/data/user_info.csv”中。此时若需要创建新用户，则调用GUI_Create_Account类。
+Source Code Flow:
 
-主界面
-包含“历史数据分析”界面、“影响因素分析”界面、“智能算法训练”界面、“患者病情诊断”和“新患者病情预测”界面。
-“患者病情诊断”界面
-包含左面输入患者相应信息，若存在信息缺失。会出现提示框，右侧分别预测患者最终能否存活，若存活概率大于0.5，则不进行下一阶段的预测，若预测小于0.5，则在细预测存活时间段。
- 
-首先在左侧输入患者信息，若缺失，则会提醒补全：
- 
-输入后，此时进行点击右面诊断部位的“开始”按钮。若诊断结果认为患者生存概率小于0.5，才进行第二阶段的诊断，如下：
- 
-并且患者信息和诊断结果会以新的excel形式存储，./data/raw_data/patient.xlsx。
-代码流程自行阅读即可，只需要注意“病理类型”做完独热编码后向量长度分别为15和14，具体原因查看“智能算法训练”界面部分的数据预处理流程即可。
+In the main program GUI.py, the GUI_Log class is responsible for invoking the login interface. Usernames and passwords are stored in the "user_info.csv" file in Excel format under the "./GUI/data/" directory. If there is a need to create a new user, the GUI_Create_Account class is invoked.
 
-“新患者病情预测”界面
+## Main Interface:
+The main interface includes "Patient Condition Diagnosis" and "New Patient Condition Prediction" sections.
 
-包含左面输入患者相应信息，若存在信息缺失。会出现提示框，右侧分别预测患者最终能否存活，若存活概率大于0.5，则不进行下一阶段的预测，若预测小于0.5，则在细预测存活时间段。
- 
-输入后，此时进行点击右面诊断部位的“开始”按钮。若诊断结果认为患者生存概率小于0.5，才进行第二阶段的诊断，如下：
- 
-并且患者信息和诊断结果会以新的excel形式存储，./data/raw_data/new_patient.xlsx。
-代码流程自行阅读即可，只需要注意“病理类型”做完独热编码后向量长度分别为15和14，具体原因查看“智能算法训练”界面部分的数据预处理流程即可。
+### "Patient Condition Diagnosis" section
 
+The left side of the interface involves entering relevant patient information. If there is missing information, a prompt dialog will appear. On the right side, the system predicts whether the patient can survive. If the probability of survival is greater than 0.5, further prediction stages are not conducted. If the prediction is less than 0.5, a detailed prediction of the survival time interval will be carried out.
+
+<div align=center>
+<img src="data/pictures/5.png" width="540" height="315">
+</div>
+
+Firstly, input patient information on the left side. If there is missing information, a prompt will appear to complete the details.
+
+<div align=center>
+<img src="data/pictures/6.png" width="540" height="315">
+</div>
+
+After inputting the information, click the "Start" button on the right to initiate the diagnosis of the selected area. If the diagnostic result indicates a patient survival probability less than 0.5, the second stage of diagnosis is initiated, as follows:
+
+<div align=center>
+<img src="data/pictures/7.png" width="540" height="315">
+</div>
+
+Furthermore, patient information and diagnostic results will be stored in a new Excel format at ./data/raw_data/patient.xlsx.
+
+### "New Patient Condition Prediction" section
+
+The interface involves inputting patient information on the left side. If there is missing information, a prompt will appear. On the right side, the system predicts whether the patient can ultimately survive. If the survival probability is greater than 0.5, no further prediction stages are performed. If the prediction is less than 0.5, a detailed prediction of the survival time interval is conducted.
+
+<div align=center>
+<img src="data/pictures/8.png" width="540" height="315">
+</div>
+
+After inputting the information, click the "Start" button on the right to initiate the diagnosis of the selected area. If the diagnostic result indicates a patient survival probability less than 0.5, the second stage of diagnosis is initiated, as follows:
+
+<div align=center>
+<img src="data/pictures/9.png" width="540" height="315">
+</div>
+
+Additionally, patient information and diagnostic results will be stored in a new Excel format at ./data/raw_data/new_patient.xlsx.
