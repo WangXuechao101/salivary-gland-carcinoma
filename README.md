@@ -14,7 +14,19 @@ Upon running the software, the login interface appears. Enter the username and c
 
 If the entered username or password is incorrect, a warning dialog will appear, stating, "This user does not exist. Please re-enter or create a new user!"
 
+<div align=center>
+<img src="data/pictures/2.png" width="540" height="315">
+</div>
+
 To create a new user, click the "Create" button. A new window will appear, as follows. Enter the desired username and login password, click "Create," wait for the confirmation prompt, and then click "Exit" to return to the login interface for logging in again.
+
+<div align=center>
+<img src="data/pictures/3.png" width="540" height="315">
+</div>
+
+<div align=center>
+<img src="data/pictures/4.png" width="540" height="315">
+</div>
 
 源码流程：
 主程序GUI.py中GUI_Log类为调用登录界面，其中用户及密码以excel形式保存在“./GUI/data/user_info.csv”中。此时若需要创建新用户，则调用GUI_Create_Account类。
