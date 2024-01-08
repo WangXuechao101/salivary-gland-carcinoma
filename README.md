@@ -1,14 +1,13 @@
-# salivary-gland-carcinoma
-Prognostic prediction model for salivary gland carcinoma based on machine learning
-
-# Interactive GUI Documentation
+# Prognostic prediction model for salivary gland carcinoma based on machine learning
 Intelligent Assisted Medical Software for Salivary Gland Cancer
 
 
-# Login Interface
+## Login Interface
 Operation Process: (Username is in English only)
+
 Upon running the software, the login interface appears. Enter the username and corresponding password, then click 'Login' to access the main program.
-![image](data/pictures/图片1.png)
+<img src="https://github.com/WangXuechao101/salivary-gland-carcinoma/data/pictures/图片1.png" width="180" height="105">
+
 
 If the entered username or password is incorrect, a warning dialog will appear, stating, "This user does not exist. Please re-enter or create a new user!"
 
