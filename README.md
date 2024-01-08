@@ -1,22 +1,21 @@
 # salivary-gland-carcinoma
 Prognostic prediction model for salivary gland carcinoma based on machine learning
-交互GUI说明文档
-名称：唾液腺癌智能辅助医疗软件
-注：
-	./data/raw_data路径下是最原始文件请勿动，且不要更改名称，可以增、改内容。
-	./data/picture路径下是为GUI界面需要的图片不要删除。
-	请打开word中导航功能查看。
 
-登录界面
-操作流程：（用户名仅为英文）
-运行软件，出现如下登录界面，此时输入用户名和对应密码，点击‘登录’，即可进入主程序。
- 
-若输入用户名或密码有误，会出现警告框，“不存在此用户，请重新输入或创建新用户！”。
- 
-若创建新用户，点击“创建”按钮，出现子窗口，如下，此时输入要创建的用户名和登录密码，点击“创建”，等待出现提示框，即可完成创建新用户。此时点击“退出”按钮，重新返回登录界面进行登录。
-  
+# Interactive GUI Documentation
+Intelligent Assisted Medical Software for Salivary Gland Cancer
+
+
+# Login Interface
+Operation Process: (Username is in English only)
+Upon running the software, the login interface appears. Enter the username and corresponding password, then click 'Login' to access the main program.
+
+If the entered username or password is incorrect, a warning dialog will appear, stating, "This user does not exist. Please re-enter or create a new user!"
+
+To create a new user, click the "Create" button. A new window will appear, as follows. Enter the desired username and login password, click "Create," wait for the confirmation prompt, and then click "Exit" to return to the login interface for logging in again.
+
 源码流程：
 主程序GUI.py中GUI_Log类为调用登录界面，其中用户及密码以excel形式保存在“./GUI/data/user_info.csv”中。此时若需要创建新用户，则调用GUI_Create_Account类。
+
 主界面
 包含“历史数据分析”界面、“影响因素分析”界面、“智能算法训练”界面、“患者病情诊断”和“新患者病情预测”界面。
 “患者病情诊断”界面
