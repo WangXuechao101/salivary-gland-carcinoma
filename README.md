@@ -7,7 +7,7 @@ Operation Process: (Username is in English only)
 
 Upon running the software, the login interface appears. Enter the username and corresponding password, then click 'Login' to access the main program.
 
-<img src="https://github.com/WangXuechao101/salivary-gland-carcinoma/tree/main/data/pictures/图片1.png" width="180" height="105">
+<img src="https://github.com/WangXuechao101/salivary-gland-carcinoma/tree/main/data/pictures/图片1.png" width="540" height="251">
 
 
 If the entered username or password is incorrect, a warning dialog will appear, stating, "This user does not exist. Please re-enter or create a new user!"
